@@ -1,0 +1,53 @@
+{% set name = "asgiref" %}
+{% set version = "1.1.2" %}
+{% set hash_type = "sha256" %}
+{% set hash_value = "8b46c3d6e2ad354d9da3cfb9873f9bd46fe1b768fbc11065275ba5430a46700c" %}
+
+package:
+  name: '{{ name|lower }}'
+  version: '{{ version }}'
+
+source:
+  fn: '{{ name }}-{{ version }}.tar.gz'
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  '{{ hash_type }}': '{{ hash_value }}'
+
+build:
+  number: 0
+  script: python setup.py install  --single-version-externally-managed --record=record.txt
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - six
+  run:
+    - python
+    - six
+
+test:
+  imports:
+    - asgiref
+
+about:
+  home: http://github.com/django/asgiref/
+  license: BSD
+  license_family: BSD
+  license_file: ''
+  summary: Reference ASGI adapters and channel layers
+  description: "asgiref\n=======\n\n.. image:: https://api.travis-ci.org/django/asgiref.svg\n    :target: https://travis-ci.org/django/asgiref\n\n.. image:: https://img.shields.io/pypi/v/asgiref.svg\n \
+    \   :target: https://pypi.python.org/pypi/asgiref\n\nContains various reference ASGI implementations, including:\n\n* A base channel layer, ``asgiref.base_layer``\n* An in-memory channel layer, ``asgiref.inmemory``\n\
+    * WSGI-to-ASGI and ASGI-to-WSGI adapters, in ``asgiref.wsgi``\n\n\nBase Channel Layer\n------------------\n\nProvides an optional template to start ASGI channel layers from with the two\nexceptions\
+    \ you need provided and all API functions stubbed out.\n\nAlso comes with logic for doing per-channel capacities using channel names and\nglobbing; use ``self.get_capacity`` and pass the arguments through\
+    \ to the base\n``__init__`` if you want to use it.\n\n\nIn-memory Channel Layer\n-----------------------\n\nSimply instantiate ``asgiref.inmemory.ChannelLayer``, or use the pre-made\n``asgiref.inmemory.channel_layer``\
+    \ for easy use. Implements the ``group``\nextension, and is designed to support running multiple ASGI programs\nin separate threads within one process (the channel layer is threadsafe).\n\n\nWSGI-ASGI\
+    \ Adapters\n------------------\n\nThese are not yet complete and should not be used.\n\nDependencies\n------------\n\nAll Channels projects currently support Python 2.7, 3.4 and 3.5.\n\nContributing\n\
+    ------------\n\nPlease refer to the\n`main Channels contributing docs <https://github.com/django/channels/blob/master/CONTRIBUTING.rst>`_.\nThat also contains advice on how to set up the development\
+    \ environment and run the tests.\n\nMaintenance and Security\n------------------------\n\nTo report security issues, please contact security@djangoproject.com. For GPG\nsignatures and more security\
+    \ process information, see\nhttps://docs.djangoproject.com/en/dev/internals/security/.\n\nTo report bugs or request new features, please open a new GitHub issue.\n\nThis repository is part of the Channels\
+    \ project. For the shepherd and maintenance team, please see the\n`main Channels readme <https://github.com/django/channels/blob/master/README.rst>`_."
+  doc_url: ''
+  dev_url: ''
+
+extra:
+  recipe-maintainers: ''

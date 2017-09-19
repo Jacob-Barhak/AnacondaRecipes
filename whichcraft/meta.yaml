@@ -1,0 +1,46 @@
+{% set version = "0.4.1" %}
+{% set gh_org = "pydanny" %}
+{% set name = "whichcraft" %}
+{% set sha256 = "9e0d51c9387cb7e9f28b7edb549e6a03da758f7784f991eb4397d7f7808c57fd" %}
+
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  source_files:
+    - test_whichcraft.py
+  requires:
+    - flake8
+    - pytest
+    - wheel
+    - pytest-cov
+
+about:
+  home: https://github.com/{{ gh_org }}/{{ name }}
+  license: BSD-3-Clause
+  summary: >
+            This package provides cross-platform cross-python shutil.which
+            functionality.
+
+extra:
+  recipe-maintainers:
+    - bollwyvl
+    - pydanny

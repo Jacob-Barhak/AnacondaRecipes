@@ -1,0 +1,28 @@
+package:
+  name: cookiecutter-django
+  version: "1.9.9.5"
+
+source:
+  git_rev: 1.9.9-05
+  git_url: https://github.com/pydanny/cookiecutter-django/releases/
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - git
+
+  run:
+    - python
+    - cookiecutter
+    - flake8  # - sh Linux
+    - binaryornot
+
+test:
+  requires:
+    - cookiecutter
+
+
+about:
+  home: https://github.com/pydanny/cookiecutter-django/releases
+  license: BSD

@@ -1,0 +1,44 @@
+{% set version = "0.2.0" %}
+{% set gh_org = "hackebrot" %}
+{% set gh_repo = "jinja2-time" %}
+
+package:
+  name: {{ gh_repo }}
+  version: {{ version }}
+
+source:
+  fn: {{ gh_repo }}-{{ version }}.tar.gz
+  url: https://github.com/{{ gh_org }}/{{ gh_repo }}/archive/{{ version }}.tar.gz
+  sha256: 0e647e525ba47523fa400a58fdec090b1cc6dcec4afbf095ee01e9e589e5a5ef
+
+build:
+  number: 1
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - arrow
+    - jinja2
+    - python
+
+test:
+  source_files:
+    - .
+  requires:
+    - freezegun
+    - pytest
+    - python
+  commands:
+    - py.test
+
+about:
+  home: https://github.com/{{ gh_org }}/{{ gh_repo }}
+  license: MIT
+  summary: Jinja2 Extension for Dates and Times
+
+extra:
+  recipe-maintainers:
+    - bollwyvl

@@ -1,0 +1,37 @@
+{% set version = "1.1.2" %}
+
+package:
+  name: chai
+  version: {{ version }}
+
+source:
+  fn: chai-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/c/chai/chai-{{ version }}.tar.gz
+  sha256: ff8d2b6855f660cd23cd5ec79bd10264d39f24f6235773331b48e7fcd637d6cc
+
+build:
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - chai
+
+about:
+  home: https://github.com/agoragames/chai
+  license: BSD 3-Clause
+  license_file: LICENSE.txt
+  summary: 'Easy to use mocking, stubbing and spying framework.'
+  license_family: BSD
+
+extra:
+  recipe-maintainers:
+    - bollwyvl
+    - ocefpaf
