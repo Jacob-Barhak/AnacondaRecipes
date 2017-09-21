@@ -1,0 +1,67 @@
+{% set name = "rxpy" %}
+{% set version = "0.1.0" %}
+{% set hash_type = "sha256" %}
+{% set hash_value = "c26978f66219140844f2c2eb1c1b689bc40fa78da354fe42c160141ed68eb3a4" %}
+
+package:
+  name: '{{ name|lower }}'
+  version: '{{ version }}'
+
+source:
+  fn: '{{ name }}-{{ version }}.tar.gz'
+  url: https://pypi.io/packages/source/r/rxpy/RXPY-0.1.0.tar.gz
+  '{{ hash_type }}': '{{ hash_value }}'
+
+build:
+  number: 0
+  script: 'python setup.py install '
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - rxpy
+    - rxpy.alphabet
+    - rxpy.alphabet._test
+    - rxpy.compat
+    - rxpy.engine
+    - rxpy.engine.simple
+    - rxpy.engine.simple._test
+    - rxpy.graph
+    - rxpy.parser
+    - rxpy.parser._test
+
+about:
+  home: http://www.acooke.org/rxpy/
+  license: GNU Library or Lesser General Public License (LGPL) or Mozilla Public License 1.1 (MPL 1.1)
+  license_family: LGPL
+  license_file: ''
+  summary: A Regular Expression Library for Python
+  description: 'RXPY is a regular expression library, written purely in Python, that is almost
+
+    completely backwards compatible with the standard Python re library (only
+
+    locale-based character groups are not supported).
+
+
+    It has a modular design that allows different alphabets and engines to be
+
+    used.  This allows regular expressions to be defined over sequences of
+
+    arbitrary objects (a mapping between objects and the characters used in the
+
+    regular expression must exist; this is defined by the alphabet).
+
+
+    Release 0.1.0 marks a relatively stable architecture and initial engine.
+
+    The next release will add a second engine.'
+  doc_url: ''
+  dev_url: ''
+
+extra:
+  recipe-maintainers: ''

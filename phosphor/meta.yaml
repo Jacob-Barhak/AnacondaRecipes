@@ -1,0 +1,31 @@
+
+package:
+  name: phosphor
+  version: "1.5.0"
+
+source:
+  git_url: https://github.com/phosphorjs/phosphor.git
+  git_rev: 1.5.0
+
+build:
+  number: 0
+  noarch: generic
+
+requirements:
+  build:
+    - nodejs
+    - git
+
+  test:
+    - nodejs
+
+
+
+about:
+  home: https://github.com/phosphorjs/phosphor
+  license: BSD 3-clause
+  summary: PhosphorJS provides a rich set of widgets, layouts, events, and data structures. \
+           These enable developers to construct advanced, production-quality, desktop-like web \
+           applications that would be otherwise impossible using CSS alone.
+
+

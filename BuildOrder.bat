@@ -10,8 +10,12 @@ conda build flake8 --user jacob-barhak -c jacob-barhak -c anaconda
 conda build whichcraft --user jacob-barhak -c jacob-barhak -c anaconda --no-test
 conda build cookiecutter --user jacob-barhak -c jacob-barhak -c anaconda
 conda build cookiecutter-django  --user jacob-barhak -c jacob-barhak -c anaconda
+
 conda build asgiref  --user jacob-barhak -c jacob-barhak -c anaconda
 conda build txaio --user jacob-barhak -c jacob-barhak -c anaconda
 conda build autobahn --user jacob-barhak -c jacob-barhak -c anaconda
 conda build daphne --user jacob-barhak -c jacob-barhak -c anaconda
 conda build channels --user jacob-barhak -c jacob-barhak -c anaconda
+
+conda build rxpy --user jacob-barhak -c jacob-barhak -c anaconda
+conda build phosphor --user jacob-barhak -c jacob-barhak -c anaconda

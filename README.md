@@ -6,6 +6,8 @@ This repository contains conda build recipes made in part for Anaconda Inc.
 End packages were:
 1. cookiecutter-django
 2. channels
+3. phosphor
+4. rxpy
 
 The packages can be build on windows 10x64 and Centos 6.9x64 using the 
 BuildOrder.bat and BuildOrder.sh. Please replace the channel for build.

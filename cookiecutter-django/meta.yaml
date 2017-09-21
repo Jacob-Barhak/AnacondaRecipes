@@ -4,8 +4,12 @@ package:
 
 source:
   git_rev: 1.9.9-05
-  git_url: https://github.com/pydanny/cookiecutter-django/releases/
+  git_url: https://github.com/pydanny/cookiecutter-django.git
 
+Build:
+  number: 1
+
+  
 requirements:
   build:
     - python
@@ -15,8 +19,7 @@ requirements:
   run:
     - python
     - cookiecutter
-    - flake8  # - sh Linux
-    - binaryornot
+    - flake8  
 
 test:
   requires:
@@ -26,3 +29,5 @@ test:
 about:
   home: https://github.com/pydanny/cookiecutter-django/releases
   license: BSD
+  summary: Cookiecutter Django is a framework for jumpstarting production-ready Django projects quickly. 
+
