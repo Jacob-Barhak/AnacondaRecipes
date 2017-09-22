@@ -12,7 +12,7 @@ End packages were:
 The packages can be build on windows 10x64 and Centos 6.9x64 using the 
 BuildOrder.bat and BuildOrder.sh. Please replace the channel for build.
 
-Conda-build 3 was used with Anaconda 4. 
+Conda-build 3.0.19 was used with Anaconda 4.4.0 64 bit using Python 3. 
 
 Some of recipes were copied from conda-forge to satisfy dependencies.
 
