@@ -31,9 +31,9 @@ test:
 
 about:
   home: http://github.com/django/asgiref/
-  license: BSD
+  license: BSD 3-clause 
   license_family: BSD
-  license_file: ''
+  license_file: LICENSE
   summary: Reference ASGI adapters and channel layers
   description: "asgiref\n=======\n\n.. image:: https://api.travis-ci.org/django/asgiref.svg\n    :target: https://travis-ci.org/django/asgiref\n\n.. image:: https://img.shields.io/pypi/v/asgiref.svg\n \
     \   :target: https://pypi.python.org/pypi/asgiref\n\nContains various reference ASGI implementations, including:\n\n* A base channel layer, ``asgiref.base_layer``\n* An in-memory channel layer, ``asgiref.inmemory``\n\
@@ -46,8 +46,8 @@ about:
     \ environment and run the tests.\n\nMaintenance and Security\n------------------------\n\nTo report security issues, please contact security@djangoproject.com. For GPG\nsignatures and more security\
     \ process information, see\nhttps://docs.djangoproject.com/en/dev/internals/security/.\n\nTo report bugs or request new features, please open a new GitHub issue.\n\nThis repository is part of the Channels\
     \ project. For the shepherd and maintenance team, please see the\n`main Channels readme <https://github.com/django/channels/blob/master/README.rst>`_."
-  doc_url: ''
-  dev_url: ''
+  doc_url: https://channels.readthedocs.io/en/stable/
+  dev_url: http://github.com/django/asgiref/
 
 extra:
   recipe-maintainers: ''

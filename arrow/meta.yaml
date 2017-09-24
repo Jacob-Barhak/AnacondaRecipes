@@ -37,6 +37,8 @@ about:
   license: Apache-2.0
   license_file: LICENSE
   summary: 'Better dates & times for Python.'
+  doc_url: https://arrow.readthedocs.io/en/latest/
+  dev_url: https://github.com/crsmithdev/arrow
 
 extra:
   recipe-maintainers:

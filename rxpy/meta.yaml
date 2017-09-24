@@ -60,8 +60,8 @@ about:
     Release 0.1.0 marks a relatively stable architecture and initial engine.
 
     The next release will add a second engine.'
-  doc_url: ''
-  dev_url: ''
+  doc_url: http://www.acooke.org/rxpy/
+  dev_url: https://code.google.com/archive/p/rxpy/source
 
 extra:
   recipe-maintainers: ''

@@ -24,10 +24,13 @@ requirements:
 about:
   home: https://github.com/phosphorjs/phosphor
   license: BSD 3-clause
-  
+  license_file: LICENSE
+ 
   summary: 'PhosphorJS provides a rich set of widgets, layouts, events, and data structures.'
   
   description: "PhosphorJS provides a rich set of widgets, layouts, events, and data structures. \
     \ These enable developers to construct advanced, production-quality, desktop-like web \
     \ applications that would be otherwise impossible using CSS alone."
 
+  doc_url: http://phosphorjs.github.io/
+  dev_url: https://github.com/phosphorjs/phosphor

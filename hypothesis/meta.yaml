@@ -37,7 +37,11 @@ test:
 about:
   home: https://github.com/HypothesisWorks/hypothesis-python
   license: MPL 2.0
+  license_file: LICENSE.txt
   summary: 'A library for property based testing'
+  doc_url: http://hypothesis.works/
+  dev_url: https://github.com/HypothesisWorks/hypothesis-python
+  
 
 extra:
   recipe-maintainers:

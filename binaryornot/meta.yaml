@@ -38,9 +38,10 @@ test:
 about:
   home: https://github.com/{{ gh_org }}/{{ gh_repo }}
   license: BSD-3-Clause
-  summary: >
-            Ultra-lightweight pure Python package to check if a file is binary
-            or text.
+  license_file: LICENSE
+  summary: Ultra-lightweight pure Python package to check if a file is binary or text.
+  doc_url: https://binaryornot.readthedocs.io/en/latest/
+  dev_url: https://github.com/audreyr/binaryornot
 
 extra:
   recipe-maintainers:

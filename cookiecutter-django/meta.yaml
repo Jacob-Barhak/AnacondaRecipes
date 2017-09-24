@@ -27,7 +27,9 @@ test:
 
 
 about:
-  home: https://github.com/pydanny/cookiecutter-django/releases
-  license: BSD
+  home: https://github.com/pydanny/cookiecutter-django
+  license: BSD 3-clause
+  license_file: LICENSE
   summary: Cookiecutter Django is a framework for jumpstarting production-ready Django projects quickly. 
-
+  doc_url: https://cookiecutter.readthedocs.io
+  dev_url: https://github.com/pydanny/cookiecutter-django

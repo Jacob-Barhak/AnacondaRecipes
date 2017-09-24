@@ -70,8 +70,12 @@ test:
 about:
   home: https://github.com/audreyr/cookiecutter
   license: BSD License
-  summary: 'A command-line utility that creates projects from project templates, e.g. creating a Python package project from a Python package project template.'
+  license_file: LICENSE
   license_family: BSD
+  summary: 'A command-line utility that creates projects from project templates, e.g. creating a Python package project from a Python package project template.'
+  doc_url: https://cookiecutter.readthedocs.io
+  dev_url: https://github.com/audreyr/cookiecutter
+
 
 # See
 # http://docs.continuum.io/conda/build.html for

@@ -30,6 +30,7 @@ about:
   license_file: LICENSE.txt
   summary: 'Easy to use mocking, stubbing and spying framework.'
   license_family: BSD
+  dev_url: https://github.com/agoragames/chai
 
 extra:
   recipe-maintainers:

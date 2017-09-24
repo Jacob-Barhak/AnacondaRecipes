@@ -32,7 +32,10 @@ about:
   license: Apache-2.0
   license_file: LICENSE
   summary: 'Let your Python tests travel through time.'
+  dev_url: https://github.com/spulec/freezegun
 
+  
+  
 extra:
   recipe-maintainers:
     - ocefpaf

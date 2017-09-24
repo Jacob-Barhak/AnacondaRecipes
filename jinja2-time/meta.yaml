@@ -37,7 +37,10 @@ test:
 about:
   home: https://github.com/{{ gh_org }}/{{ gh_repo }}
   license: MIT
+  license_file: LICENSE
   summary: Jinja2 Extension for Dates and Times
+  dev_url: https://github.com/hackebrot/jinja2-time
+
 
 extra:
   recipe-maintainers:

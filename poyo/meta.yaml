@@ -35,7 +35,9 @@ test:
 about:
   home: https://github.com/{{ gh_org }}/{{ name }}
   license: MIT
+  license_file: LICENSE  
   summary: A lightweight YAML Parser for Python
+  dev_url: https://github.com/hackebrot/poyo
 
 extra:
   recipe-maintainers:
