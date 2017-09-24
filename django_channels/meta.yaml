@@ -48,7 +48,6 @@ about:
   home: http://github.com/django/channels
   license: BSD 3-clause 
   license_family: BSD
-  license_file: LICENSE
   summary: Brings event-driven capabilities to Django with a channel system. Django 1.8 and up only.
   description: "Django Channels\n===============\n\n.. image:: https://api.travis-ci.org/django/channels.svg\n    :target: https://travis-ci.org/django/channels\n\n.. image:: https://readthedocs.org/projects/channels/badge/?version=latest\n\
     \    :target: https://channels.readthedocs.io/en/latest/?badge=latest\n\n.. image:: https://img.shields.io/pypi/v/channels.svg\n    :target: https://pypi.python.org/pypi/channels\n\n.. image:: https://img.shields.io/pypi/l/channels.svg\n\
