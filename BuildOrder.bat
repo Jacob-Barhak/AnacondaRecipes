@@ -7,7 +7,7 @@ conda build jinja2 --user jacob-barhak -c jacob-barhak -c anaconda
 conda build jinja2-time --user jacob-barhak -c jacob-barhak -c anaconda
 conda build poyo --user jacob-barhak -c jacob-barhak -c anaconda
 conda build flake8 --user jacob-barhak -c jacob-barhak -c anaconda
-conda build whichcraft --user jacob-barhak -c jacob-barhak -c anaconda --no-test
+conda build whichcraft --user jacob-barhak -c jacob-barhak -c anaconda
 conda build cookiecutter --user jacob-barhak -c jacob-barhak -c anaconda
 conda build cookiecutter-django  --user jacob-barhak -c jacob-barhak -c anaconda
 
